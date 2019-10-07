@@ -8,6 +8,10 @@ int main()
 	cout << "Enter the string:";
 	cin >> str;
 	int count[256], i = 0;
+	for(i = 0; i < 256; i++)
+	{
+		count[i] = 0;
+	}
 	for(i = 0; i < strlen(str.c_str()); i++)
 	{
 		count[str[i]]++;
@@ -15,7 +19,6 @@ int main()
 	
 	for(i = 0; i <= strlen(str.c_str()); i++)
 	{
-		cout << str[i] << ":" << count[str[i]];
 		if(count[str[i]] == 1)
 		{	
 			cout << str[i];
