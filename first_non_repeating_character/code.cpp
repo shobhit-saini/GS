@@ -7,11 +7,8 @@ int main()
 	string str;
 	cout << "Enter the string:";
 	cin >> str;
-	int count[256], i = 0;
-	for(i = 0; i < 256; i++)
-	{
-		count[i] = 0;
-	}
+	int count[256] = {0}, i = 0;
+
 	for(i = 0; i < strlen(str.c_str()); i++)
 	{
 		count[str[i]]++;
